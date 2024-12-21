@@ -6,6 +6,7 @@ Run graphical applications using Xorg inside docker container
 
 - share workspace directory with host
 - optionally disable internet for apps
+- run chosen command at startup
 
 # Usage
 
