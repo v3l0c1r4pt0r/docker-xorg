@@ -21,6 +21,8 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 RUN apt install -y xterm strace iproute2
+RUN apt install -y sudo # for disabling network
+COPY sudoers /etc/sudoers
 
 COPY entrypoint.sh /opt/
 
